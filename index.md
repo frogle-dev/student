@@ -38,6 +38,22 @@ Hi! My name is Jonah Larsson.
     <span style="color: #ffffffff">.md Cheatsheet</span>
 </a>
 
+### Markdown Cheatsheet
+
+| Element      | Markdown Syntax |
+|--------------|----------|
+| Heading | # H1<br/>## H2<br/>### H3  |
+| Bold     | \*\*bold text** |
+| Italic     | Avantika |
+| Blockquote     | Aadit    |
+| Ordered List | John     |
+| Unordered List     | Torin    |
+| Code     | Avantika |
+| Horizontal Rule     | Aadit    |
+| Link     | Avantika |
+| Image     | Aadit    |
+
+
 <br>
 
 ### Class Progress
