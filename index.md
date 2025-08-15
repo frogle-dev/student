@@ -34,6 +34,9 @@ Hi! My name is Jonah Larsson.
 <a href="https://vscode.dev/" class="button small" style="background-color: #d38a4bff">
     <span style="color: #FFFFFF">VSCODE</span>
 </a>
+<a href="https://www.markdownguide.org/cheat-sheet/" class="button small" style="background-color: #d34bc1ff">
+    <span style="color: #ffffffff">.md Cheatsheet</span>
+</a>
 
 <br>
 
