@@ -50,12 +50,13 @@ Hi! My name is Jonah Larsson.
 | Ordered List | 1. First item <br/> 2. Second item <br/> 3. Third item |
 | Unordered List     | - First item <br/> - Second item <br/> - Third item    |
 | Code     | \`code` |
-| Horizontal Rule     | \--- |
+| Horizontal Rule     | \-\-\- |
 | Link     | \[title](https://www.example.com) |
-| Image     | \![alt text](image.jpg) |
-
+| Image     | \![alt text]\(image.jpg) |
+| Escape Character | \ |
 
 <br>
+
 
 ### Class Progress
 
