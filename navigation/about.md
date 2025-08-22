@@ -119,4 +119,10 @@ Gallery of Pics, these are photos of my travels and hanging out with my friends
 </comment>
 <div class="image-gallery">
   <img src="{{site.baseurl}}/images/about/IMG_3414.jpg" alt="Image 1">
+  <img src="{{site.baseurl}}/images/about/IMG_3616.jpg" alt="Image 2">
+  <img src="{{site.baseurl}}/images/about/IMG_3762.jpg" alt="Image 3">
+  <img src="{{site.baseurl}}/images/about/IMG_3874.jpg" alt="Image 4">
+  <img src="{{site.baseurl}}/images/about/IMG_4239.jpg" alt="Image 5">
+  <img src="{{site.baseurl}}/images/about/IMG_5722.jpg" alt="Image 6">
+  <img src="{{site.baseurl}}/images/about/IMG_6172.jpg" alt="Image 7">
 </div>
