@@ -124,5 +124,5 @@ Gallery of Pics, these are photos of my travels and hanging out with my friends
   <img src="{{site.baseurl}}/images/about/IMG_3874.jpg" alt="Image 4">
   <img src="{{site.baseurl}}/images/about/IMG_4239.jpg" alt="Image 5">
   <img src="{{site.baseurl}}/images/about/IMG_5722.jpg" alt="Image 6">
-  <img src="{{site.baseurl}}/images/about/IMG_6172.jpg" alt="Image 7">
+  <img src="{{site.baseurl}}/images/about/IMG_6127.jpg" alt="Image 7">
 </div>
