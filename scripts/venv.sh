@@ -13,7 +13,7 @@ fi
 source venv/bin/activate
 
 # Install the required Python packages
-pip install -r requirements.txt     # --break-system-packages
+pip install -r requirements.txt --break-system-packages
 
 # Configure Bundler to install gems locally
 bundle config set --local path './.bundle'
