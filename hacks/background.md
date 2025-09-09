@@ -10,6 +10,7 @@ permalink: /background
 <canvas id="world"></canvas>
 
 <script>
+// creating elements used in the scene
   const canvas = document.getElementById("world");
   const ctx = canvas.getContext('2d');
   const backgroundImg = new Image();
@@ -17,6 +18,7 @@ permalink: /background
   backgroundImg.src = '{{page.background}}';
   spriteImg.src = '{{page.sprite}}';
 
+// load images
   let imagesLoaded = 0;
   backgroundImg.onload = function() {
     imagesLoaded++;
@@ -27,9 +29,11 @@ permalink: /background
     startGameWorld();
   };
 
+// initializing the game world and creating all the objects
   function startGameWorld() {
     if (imagesLoaded < 2) return;
 
+	// class for game objects, all other game objects derive from this
     class GameObject {
       constructor(image, width, height, x = 0, y = 0, speedRatio = 0) {
         this.image = image;
@@ -46,6 +50,7 @@ permalink: /background
       }
     }
 
+	// class for the background of the scene that inherits from the game object class
     class Background extends GameObject {
       constructor(image, gameWorld) {
         // Fill entire canvas
@@ -60,6 +65,7 @@ permalink: /background
       }
     }
 
+	// player class which is the ufo, inherits from game object class
     class Player extends GameObject {
       constructor(image, gameWorld) {
         const width = image.naturalWidth / 2;
@@ -76,6 +82,7 @@ permalink: /background
       }
     }
 
+	// class for the gameworld where the game is run and the background and player objects are created
     class GameWorld {
       static gameSpeed = 5;
       constructor(backgroundImg, spriteImg) {
