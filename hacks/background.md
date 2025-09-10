@@ -65,6 +65,20 @@ permalink: /background
       }
     }
 
+	//input
+	player_dir = 0;
+	let changeDir = function(key){
+		// test key and switch direction
+		switch(key) {
+			case 65:    // A key
+					player_dir = -1; // then switch left
+				break;
+			case 68:    // D key
+					player_dir = 1; // then switch right
+				break;
+		}
+	}
+
 	// player class which is the ufo, inherits from game object class
     class Player extends GameObject {
       constructor(image, gameWorld) {
@@ -74,13 +88,20 @@ permalink: /background
         const y = (gameWorld.height - height) / 2;
         super(image, width, height, x, y);
         this.baseY = y;
+		this.baseX = x;
         this.frame = 0;
       }
       update() {
+		canvas.onkeydown = function(evt) {
+			changeDir(evt.keyCode);
+        }
+
+		this.x = this.baseX + Math.tan(this.frame * 0.1) * 40;
         this.y = this.baseY + Math.sin(this.frame * 0.05) * 20;
         this.frame++;
       }
     }
+
 
 	// class for the gameworld where the game is run and the background and player objects are created
     class GameWorld {
@@ -109,6 +130,7 @@ permalink: /background
           obj.update();
           obj.draw(this.ctx);
         }
+
         requestAnimationFrame(this.gameLoop.bind(this));
       }
       start() {
