@@ -2,7 +2,7 @@
 layout: opencs
 title: Background with Object
 sprite: /images/platformer/sprites/flying-ufo.png
-background: /images/platformer/backgrounds/tranquil_field.jpg
+
 permalink: /background
 ---
 
